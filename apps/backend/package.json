@@ -1,0 +1,23 @@
+{
+  "name": "taskflow-lite",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "build": "echo 'No build step defined'",
+    "migrate": "psql -U postgres -d taskflow -f migrations/001_init.sql"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "jest": "^26.6.3",
+    "supertest": "^6.1.0"
+  }
+}
