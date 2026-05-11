@@ -6,7 +6,7 @@
     "dev": "nodemon src/index.js",
     "test": "jest",
     "build": "echo 'No build step defined'",
-    "migrate": "psql -U postgres -d taskflow -f migrations/001_init.sql"
+    "migrate": "node src/migrations/migrate.js"
   },
   "dependencies": {
     "express": "^4.17.1",
